@@ -1,17 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 :root {
-    --light-orange: #D0A76A;
-    --bg-dark: #000000;
-    --bg-green: ##2E4C44;
-    --light-gray: ##D9D9D9;
+  --light-orange: #d0a76a;
+  --bg-dark: #000000;
+  --bg-green: #2e4c44;
+  --light-gray: #d9d9d9;
 }
 
+h1 {
+  font-size: 84px;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+h4 {
+  font-size: 34px;
+}
+
+p {
+  font-size: 24px;
+}
 
 .bg-header {
-    background: url('../images/main_page/bg_header.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
+  background: url("../images/main_page/bg_header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
+.border-right {
+  border-right: 2px solid white;
+  height: fit-content;
+}
+
+.border-left-orange {
+  border-left: 2px solid var(--light-orange);
+  height: fit-content;
+}
+
+.bg-hero {
+  background: url("../images/main_page/bg_hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.bg-green {
+  background-color: var(--bg-green);
+}
+
+.text-orange {
+  color: var(--light-orange);
+}
+
+.bg-gray {
+  background-color: var(--light-gray);
+}
+
+.text-gray {
+  color: var(--light-gray);
+}
+
+
+/* slider categories */
+/* 
+.slider-container {
+  position: relative;
+}
+
+.slider-btn {
+  top: 154%;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.slider-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.slider-btn i {
+  font-size: 18px;
+  color: #333;
+}
+
+.slider-prev {
+  left: 20px;
+}
+
+.slider-next {
+  right: 20px;
+} */
