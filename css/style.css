@@ -50,6 +50,11 @@ p {
   height: fit-content;
 }
 
+
+.border-bottom-orange {
+  border-bottom: 2px solid var(--light-orange);
+}
+
 .bg-hero {
   background: url("../images/main_page/bg_hero.png");
   background-repeat: no-repeat;
@@ -113,6 +118,3 @@ p {
 
 
 
-.border-bottom {
-  border-bottom: 2px solid var(--light-orange);
-}
