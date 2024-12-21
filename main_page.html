@@ -128,7 +128,7 @@
     <section>
         <div class="container-fluid position-relative px-5 mx-4">
             <h2>Категории</h2>
-            <div class="slider row pt-5 border-bottom-orange pb-5 mb-5">
+            <div class="slider-hero row pt-5 border-bottom-orange pb-5 mb-5">
                 <div class="col-md-4 text-center">
                     <img src="images/main_page/chairs.png" class="img-fluid pb-4" alt="Стулья">
                     <div class="pt-3 text-start border-left-orange px-3">
@@ -266,71 +266,338 @@
     <section>
         <div class="container-fluid py-5">
             <h2 class="mb-4 ps-5">Бестселлеры</h2>
-            <div class="row g-2 ps-3">
+            <div class="slider-bestsellers" data-slick='{"slidesToShow": 2, "slidesToScroll": 1, "arrows": true, "dots": false, "infinite": true, "autoplay": true, "autoplaySpeed": 2000,  "cssEase: linear", "responsive": [{"breakpoint": 768, "settings": {"slidesToShow": 1}}]}'>
+                <!-- LEFT SIDE OF GOODS -->
                 <div class="col-lg-6">
                     <div class="position-relative">
-                        <img src="images/main_page/large_chair.png" class="img-fluid" alt="Большое кресло">
+                        <img src="images/main_page/large_chair.png" class="img-fluid rounded" alt="Большое кресло">
+                    </div>
+                </div>
+                <!-- RIGHT SIDE OF GOODS -->
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <!-- Product 1 -->
+                        <div class="col-md-6">
+                            <div class="text-center border border-white p-3 rounded">
+                                <img src="images/main_page/item1.png" class="img-fluid pb-2" alt="Товар">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <p class="text-muted fs-6 fw-light mb-0">
+                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
+                                    </p>
+                                    <p class="text-muted fs-6 fw-light ms-3 mb-0">
+                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
+                                    </p>
+                                </div>
+                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="col-md-6">
+                            <div class="text-center border border-white p-3 rounded">
+                                <img src="images/main_page/item2.png" class="img-fluid pb-2" alt="Товар">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <p class="text-muted fs-6 fw-light mb-0">
+                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
+                                    </p>
+                                    <p class="text-muted fs-6 fw-light ms-3 mb-0">
+                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
+                                    </p>
+                                </div>
+                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
+                            </div>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="col-md-6">
+                            <div class="text-center border border-white p-3 rounded">
+                                <img src="images/main_page/item3.png" class="img-fluid pb-2" alt="Товар">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <p class="text-muted fs-6 fw-light mb-0">
+                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
+                                    </p>
+                                    <p class="text-muted fs-6 fw-light ms-3 mb-0">
+                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
+                                    </p>
+                                </div>
+                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
+                            </div>
+                        </div>
+                        <!-- Product 4 -->
+                        <div class="col-md-6">
+                            <div class="text-center border border-white p-3 rounded">
+                                <img src="images/main_page/item4.png" class="img-fluid pb-2" alt="Товар">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <p class="text-muted fs-6 fw-light mb-0">
+                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
+                                    </p>
+                                    <p class="text-muted fs-6 fw-light ms-3 mb-0">
+                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
+                                    </p>
+                                </div>
+                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="images/main_page/large_chair.png" class="img-fluid rounded" alt="Большое кресло">
+                    </div>
+                </div>
+                <!-- RIGHT SIDE OF GOODS -->
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <!-- Product 1 -->
+                        <div class="col-md-6">
+                            <div class="text-center border border-white p-3 rounded">
+                                <img src="images/main_page/item1.png" class="img-fluid pb-2" alt="Товар">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <p class="text-muted fs-6 fw-light mb-0">
+                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
+                                    </p>
+                                    <p class="text-muted fs-6 fw-light ms-3 mb-0">
+                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
+                                    </p>
+                                </div>
+                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="col-md-6">
+                            <div class="text-center border border-white p-3 rounded">
+                                <img src="images/main_page/item2.png" class="img-fluid pb-2" alt="Товар">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <p class="text-muted fs-6 fw-light mb-0">
+                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
+                                    </p>
+                                    <p class="text-muted fs-6 fw-light ms-3 mb-0">
+                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
+                                    </p>
+                                </div>
+                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
+                            </div>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="col-md-6">
+                            <div class="text-center border border-white p-3 rounded">
+                                <img src="images/main_page/item3.png" class="img-fluid pb-2" alt="Товар">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <p class="text-muted fs-6 fw-light mb-0">
+                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
+                                    </p>
+                                    <p class="text-muted fs-6 fw-light ms-3 mb-0">
+                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
+                                    </p>
+                                </div>
+                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
+                            </div>
+                        </div>
+                        <!-- Product 4 -->
+                        <div class="col-md-6">
+                            <div class="text-center border border-white p-3 rounded">
+                                <img src="images/main_page/item4.png" class="img-fluid pb-2" alt="Товар">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <p class="text-muted fs-6 fw-light mb-0">
+                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
+                                    </p>
+                                    <p class="text-muted fs-6 fw-light ms-3 mb-0">
+                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
+                                    </p>
+                                </div>
+                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Slider Navigation -->
+        <button class="slider-btn slider-prev position-absolute top-50 start-0 translate-middle-y">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="slider-btn slider-next position-absolute top-50 end-0 translate-middle-y">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    </section>
+
+  
+
+    <!-- brands -->
+    <section>
+        <div class="container-fluid px-5 mx-4 pt-5 pb-5 mb-5">
+            <h2>Бренды</h2>
+            <div class="slider-brand-right row pt-5 pb-5 mb-5">
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand1.png" class="img-fluid pb-4" alt="Brand 1">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand2.png" class="img-fluid pb-4" alt="Brand 2">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand3.png" class="img-fluid pb-4" alt="Brand 3">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand1.png" class="img-fluid pb-4" alt="Brand 1">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand2.png" class="img-fluid pb-4" alt="Brand 2">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand3.png" class="img-fluid pb-4" alt="Brand 3">
+                </div>
+            </div>
+            <div class="slider-brand-left row border-bottom-orange pb-5 mb-5">
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand4.png" class="img-fluid pb-4" alt="Brand 4">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand5.png" class="img-fluid pb-4" alt="Brand 5">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand6.png" class="img-fluid pb-4" alt="Brand 6">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand4.png" class="img-fluid pb-4" alt="Brand 4">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand5.png" class="img-fluid pb-4" alt="Brand 5">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand6.png" class="img-fluid pb-4" alt="Brand 6">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-warning text-white px-5 py-2 rounded-4">Подробнее</button>
+            </div>
+    </section>
+
+
+    <!-- corner of sales -->
+    <section class="bg-green h-100">
+        <div class="container-fluid">
+            <div class="text-white text-center p-5" style="height: 400px;"  data-aos="fade-down"
+                                                                            data-aos-easing="linear"
+                                                                            data-aos-duration="1500">
+                <h2 class="fs-4 pb-3 pt-5">Уголок распродаж</h2>
+                <p class="fs-3">Узнайте обо всех наших специальных предложениях <br> в течение всего года в уголке распродаж.</p>
+                <button type="button" class="btn btn-warning text-white mt-5 px-5 py-3 rounded-4 mb-5">Посмотреть все предложения</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- about section -->
+    <section class="d-flex align-items-center justify-content-center text-center py-5 border-bottom-orange">
+        <div class="container">
+            <div data-aos="zoom-out">
+                <h2 class="display-6 fw-normal">Premium Concept, больше чем просто сантехника</h2>
+                <p class="fs-5 mt-4">
+                    Компания «Premium Concept» по продаже элитной керамики и сантехники была основана в 2007 году. В 2008 году был открыт единственный своего рода шоу-рум с эксклюзивной коллекцией от испанского производителя Porcelanosa. С каждым годом, по мере потребностей клиентов, расширялись как ассортимент продукции, так и спектр предоставляемых услуг. За это время компании удалось завоевать доверие клиентов благодаря высокому сервису и качественной продукции от европейских производителей с мировым именем.
+                </p>
+                <p class="fs-5">
+                    Наша миссия – предоставлять инновационные решения для комфорта и более высокого уровня жизни в доме. <br>
+                    Наша цель – оставаться лидерами премиум-сегмента в области продаж сантехники, керамической плитки, мебели и аксессуаров для ванных комнат в Узбекистане.
+                </p>
+            </div>
+          
+        </div>
+    </section>
+
+
+    <!-- furniture office/home -->
+    <section class="py-5">
+        <div class="container-fluid px-5 mx-5">
+            <div class="row text-start">
+                <div class="col-lg-6">
+                    <h2 class="mb-4 text-start fs-3 fw-normal ps-5">Офис</h2>
+                    <div class="row g-2 px-5">
+                        <div class="col-auto">
+                            <button class="btn btn-light">Рабочий стол</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Менеджмент</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Офисные стулья</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Хранение</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Коворкинг</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Конференц залы</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Зона ожидания</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Коллектив</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Образование</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Мебель для улицы</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Акустика</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Аксессуары</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Освещение</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="text-center">
-                                <img src="images/main_page/item1.png" class="img-fluid pb-2" alt="Товар">
-                                <div class="d-flex justify-content-start align-items-center border-left-orange">
-                                    <p class="text-muted fs-5 fw-light ps-0 mb-0">
-                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
-                                    </p>
-                                    <p class="text-muted fs-5 fw-light px-3 mb-0">
-                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
-                                    </p>
-                                </div>
-                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
-                            </div>
+                    <h2 class="mb-4 text-start fs-3 fw-normal ps-5">Дом</h2>
+                    <div class="row g-2 px-5">
+                        <div class="col-auto">
+                            <button class="btn btn-light">Стулья</button>
                         </div>
-                        <div class="col-md-6">
-                            <div class="text-center">
-                                <img src="images/main_page/item2.png" class="img-fluid pb-2" alt="Товар">
-                                <div class="d-flex justify-content-start align-items-center border-left-orange">
-                                    <p class="text-muted fs-5 fw-light ps-0 mb-0">
-                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
-                                    </p>
-                                    <p class="text-muted fs-5 fw-light px-3 mb-0">
-                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
-                                    </p>
-                                </div>
-                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
-                            </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Кресла</button>
                         </div>
-                        <div class="col-md-6">
-                            <div class="text-center">
-                                <img src="images/main_page/item3.png" class="img-fluid pb-2" alt="Товар">
-                                <div class="d-flex justify-content-start align-items-center border-left-orange">
-                                    <p class="text-muted fs-5 fw-light ps-0 mb-0">
-                                        <i class="bi bi-tags text-orange pe-2"></i>Стулья
-                                    </p>
-                                    <p class="text-muted fs-5 fw-light px-3 mb-0">
-                                        <i class="bi bi-star text-orange pe-2"></i>Бренд
-                                    </p>
-                                </div>
-                                <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
-                            </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Диваны</button>
                         </div>
-                        <div class="col-md-6">
-                            <div class="text-center">
-                                <img src="images/main_page/item4.png" class="img-fluid pb-2" alt="Товар">
-                                <div class="border-left-orange px-3">
-                                    <div class="d-flex justify-content-start align-items-center">
-                                        <p class="text-muted mb-1 fs-5 fw-light">
-                                            <i class="bi bi-tags text-orange pe-2"></i>Стулья
-                                        </p>
-                                        <p class="text-muted mb-1 ps-3 fs-5 fw-light">
-                                            <i class="bi bi-star text-orange pe-2"></i>Бренд
-                                        </p>
-                                    </div>
-                                    <p class="fs-5 fw-normal">Монк</p>
-                                </div>
-                            </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Столы</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Хранение</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Лампы</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Домашний офис</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Аксессуары и декор</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Плитка</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Сантехника</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Паркет</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Радиаторы</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Мебель для ванны</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-light">Аксессуары для ванны</button>
                         </div>
                     </div>
                 </div>
@@ -339,39 +606,48 @@
     </section>
 
 
-
-
+    <!-- premium concept => main page -->
+    <section class="bg-black p-3"> 
+        <div class="container-fluid">
+            <div class="align-items-center">
+                <p class="display-6 fs-4 text-white text-center">Premium Concept -> Главная</p>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
-    <footer class="bg-black text-white py-5">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5 class="text-uppercase">Контакты</h5>
-                    <p>Email: premiumconcept@.com</p>
-                    <p>Телефон: +998 90 900 90 09</p>
+    <footer class="bg-green text-white py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-3">
+                    <img src="/images/main_page/header_icon.png" class="img-fluid" alt="Premium Concept">
                 </div>
-                <div class="col-md-4">
-                    <h5 class="text-uppercase">Навигация</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Главная</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">О нас</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Портфолио</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Категории</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">События</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Статьи</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Контакты</a></li>
-                    </ul>
+          
+                <div class="col-lg-8">
+                    <div class="d-flex justify-content-between">
+                        <ul class="list-unstyled d-flex gap-4 gx-4 mb-0">
+                            <li><a href="#" class="text-white text-decoration-none fs-5">ГЛАВНАЯ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">О НАС</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">ПОРТФОЛИО</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">КАТЕГОРИИ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">СОБЫТИЯ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">СТАТЬИ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5 class="text-uppercase">Социальные сети</h5>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none"><i class="bi bi-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none"><i class="bi bi-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none"><i class="bi bi-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none"><i class="bi bi-linkedin"></i></a></li>
-                    </ul>
+            </div>
+    
+            <div class="row align-items-center">
+                <div class="col-4 border-footer"></div>
+                <div class="col-4">
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-3 px-3"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-3  px-3"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-telegram fs-3  px-3"></i></a>
+                    </div>
                 </div>
+                <div class="col-4 border-footer"></div>
             </div>
         </div>
     </footer>

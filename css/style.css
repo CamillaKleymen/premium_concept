@@ -55,6 +55,11 @@ p {
   border-bottom: 2px solid var(--light-orange);
 }
 
+
+.border-footer {
+  border-top: 2px solid var(--light-orange);
+}
+
 .bg-hero {
   background: url("../images/main_page/bg_hero.png");
   background-repeat: no-repeat;
@@ -115,6 +120,25 @@ p {
 .slider-next {
   right: 20px;
 } 
+
+.btn-warning {
+  background-color: var(--light-orange);
+}
+
+.btn-warning:hover {
+  background-color: #c08b4c;
+}
+
+
+.btn-light {
+  background-color: var(--light-gray);
+  color:black;
+}
+
+.btn-light:hover {
+  background-color: var(--bg-green);
+  color: white;
+}
 
 
 
