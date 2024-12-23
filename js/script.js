@@ -3,9 +3,9 @@ $(document).ready(function() {
       dots: false,
       infinite: true,
       arrows: true,
-      autoplay: true,
-      autoplaySpeed: 0,
-      speed: 7000,
+      autoplay: false,
+      // autoplaySpeed: 0,
+      // speed: 7000,
       slidesToShow: 3,
       slidesToScroll: 1,
       prevArrow: $('.slider-prev'),
@@ -74,30 +74,58 @@ $(document).ready(function() {
   });
 
 
-  $('.slider-brand-left').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    speed: 5000,
-    cssEase: 'linear',
-    arrows: false,
-    rtl: false 
-  });
+  $(document).ready(function () {
+    $('.image-slider').slick({
+        dots: true, 
+        arrows: false, 
+        infinite: true, 
+        // speed: 500,
+        // autoplay: true, 
+        // autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});
 
 
-  $('.slider-brand-right').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    speed: 5000,
-    cssEase: 'linear',
-    arrows: false,
-    rtl: false 
-  });
+
+
+/// Инициализация правого слайдера
+$('.slider-brand-right').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 0,
+  speed: 5000,
+  cssEase: 'linear',
+  arrows: false,
+  rtl: false // Движение справа налево
+});
+
+// Инициализация левого слайдера
+$('.slider-brand-left').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 0,
+  speed: 5000,
+  cssEase: 'linear',
+  arrows: false,
+  rtl: false // Движение слева направо
+});
+
+// Синхронизация противоположного движения
+$('.slider-brand-left').on('afterChange', function(event, slick, currentSlide) {
+  $('.slider-brand-right').slick('slickGoTo', slick.slideCount - currentSlide - 1, true);
+});
+
+$('.slider-brand-right').on('afterChange', function(event, slick, currentSlide) {
+  $('.slider-brand-left').slick('slickGoTo', slick.slideCount - currentSlide - 1, true);
+});
+
+
 
 
  
@@ -128,3 +156,9 @@ $(document).ready(function() {
 $(document).ready(function() {
     AOS.init();
 });
+
+
+
+// $(document).ready(function() {
+//   new Snow();
+// });
