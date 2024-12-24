@@ -172,3 +172,18 @@ p {
 
 
 
+.chair1 {
+  top: 49%;
+  left: 83%;
+  transform: translate(-69%, -60%);
+  width: 60% !important;
+}
+
+
+
+.chair2 {
+  top: 43%;
+  left: 60%;
+  transform: translate(-10%, -54%);
+  width: 57% !important;
+}
