@@ -187,3 +187,12 @@ p {
   transform: translate(-10%, -54%);
   width: 57% !important;
 }
+
+
+.bg_hero_img{
+  background: url("../images/events/bg_hero_img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
