@@ -90,30 +90,30 @@ $(document).ready(function() {
 $(document).ready(function(){
   $('.slider-collections').slick({
     rows: 2,
-    slidesPerRow: 4,
-    dots: true,
+    slidesPerRow: 3,
+    dots: false,
     arrows: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    prevArrow: $('.slider-prev'),
+    nextArrow: $('.slider-next'),
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesPerRow: 3,
+          slidesPerRow: 3
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesPerRow: 2,
+          slidesPerRow: 2
         }
       },
       {
         breakpoint: 576,
         settings: {
-          slidesPerRow: 1,
+          slidesPerRow: 1
         }
       }
     ]

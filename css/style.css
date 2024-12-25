@@ -84,6 +84,9 @@ p {
   color: var(--light-gray);
 }
 
+.text-green {
+  color: var(--bg-green);
+}
 
 /* slider categories */
 
@@ -195,4 +198,15 @@ p {
   background-size: cover;
   background-position: center;
   height: 80vh;
+}
+
+
+.underline {
+  text-decoration: underline;
+  color: 2px solid var(--light-gray);
+  width: 100%;
+}
+
+.border-orange {
+  border: 2px solid var(--light-orange);
 }
