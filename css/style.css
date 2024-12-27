@@ -215,3 +215,101 @@ p {
   background-color: var(--bg-green);
   top:85%;
 }
+
+
+
+
+/* General Mobile Styling */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .bg-hero {
+    height: 60vh;
+    background-position: top;
+  }
+
+  .slider-btn {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slider-btn i {
+    font-size: 12px;
+  }
+
+  .border-right,
+  .border-left-orange,
+  .border-bottom-orange {
+    border-width: 1px;
+  }
+
+  .chair1, .chair2 {
+    width: 100% !important;
+    transform: none;
+    top: 0;
+    left: 0;
+  }
+
+  .bg_hero_text {
+    top: 90%;
+  }
+
+  .underline {
+    text-decoration: none;
+  }
+}
+
+/* Extra Small Mobile Styling */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .btn-warning {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .btn-light {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
