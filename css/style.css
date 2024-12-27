@@ -210,3 +210,8 @@ p {
 .border-orange {
   border: 2px solid var(--light-orange);
 }
+
+.bg_hero_text {
+  background-color: var(--bg-green);
+  top:85%;
+}
