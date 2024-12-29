@@ -34,17 +34,17 @@
 
 <body>
 
-    <!-- header -->
-    <header class="bg-black text-white">
+    <!-- header desktop -->
+    <header class="bg-black text-white d-none d-md-block">
         <div class="container-fluid">
             <div class="row align-items-center py-3">
-                <div class="col-auto">
+                <div class="col">
                     <p class="mb-0 me-3">premiumconcept@.com</p>
                 </div>
-                <div class="col-auto">
+                <div class="col">
                     <p class="mb-0">+998 90 900 90 09</p>
                 </div>
-                <div class="col-auto ms-auto">
+                <div class="col ms-auto">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Главная</a>
                         </li>
@@ -111,6 +111,57 @@
 
     </header>
 
+    <!-- header mob  -->
+    <header class="bg-black text-white d-md-none">
+        <nav class="navbar navbar-expand-lg py-5 p-5 bg-header">
+            <div class="container-fluid">
+                <!-- Logo and Description -->
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand me-3 border-right p-3 pe-3" href="#">
+                        <img src="images/main_page/header_icon.png" alt="Premium Concept" class="img-fluid"
+                            style="max-height: 60px;">
+                    </a>
+                    <span class="text-white fs-6 ps-3">№1 в сегменте премиум<br>в Узбекистане</span>
+                </div>
+
+                <!-- Responsive Toggle -->
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav w-50 justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold px-5" href="#">
+                                <i class="bi bi-mortarboard fs-5 me-1"></i> Office
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold px-5" href="#">
+                                <i class="bi bi-house fs-5 me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold px-5" href="#">
+                                <i class="bi bi-mic-fill fs-5 me-1"></i> Education
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Language Switcher -->
+                <div class="ms-3 d-flex align-items-center">
+                    <a href="#" class="text-orange text-decoration-none fw-bold me-1">RU</a>
+                    <span class="text-white mx-1">|</span>
+                    <a href="#" class="text-white text-decoration-none fw-bold ms-1">UZ</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
 
     <!-- categories -->
     <section class="d-none d-lg-block">
@@ -121,7 +172,8 @@
                 <!-- Первый dropdown -->
                 <div class="col-md-3 mb-2">
                     <div class="dropdown">
-                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownHome" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownHome"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Дом
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownHome">
@@ -131,11 +183,12 @@
                         </ul>
                     </div>
                 </div>
-            
+
                 <!-- Второй dropdown -->
                 <div class="col-md-3 mb-2">
                     <div class="dropdown">
-                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownChairs" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button"
+                            id="dropdownChairs" data-bs-toggle="dropdown" aria-expanded="false">
                             Стулья
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownChairs">
@@ -145,11 +198,12 @@
                         </ul>
                     </div>
                 </div>
-            
+
                 <!-- Третий dropdown -->
                 <div class="col-md-3 mb-2">
                     <div class="dropdown">
-                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownBrands" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button"
+                            id="dropdownBrands" data-bs-toggle="dropdown" aria-expanded="false">
                             Все бренды
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownBrands">
@@ -159,13 +213,13 @@
                         </ul>
                     </div>
                 </div>
-            
+
                 <!-- Кнопка сброса -->
                 <div class="col-md-3 text-center">
                     <button class="btn btn-warning text-white px-4">Сбросить фильтры</button>
                 </div>
             </div>
-            
+
 
             <!-- Product Grid -->
             <div class="row g-4">
@@ -187,8 +241,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
 
                 <!-- Product 2 -->
                 <div class="col-md-4">
@@ -201,7 +255,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -218,7 +272,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -241,8 +295,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
 
                 <!-- Product 2 -->
                 <div class="col-md-4">
@@ -255,7 +309,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -272,7 +326,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -295,8 +349,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
 
                 <!-- Product 2 -->
                 <div class="col-md-4">
@@ -309,7 +363,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -326,7 +380,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -349,8 +403,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
 
                 <!-- Product 2 -->
                 <div class="col-md-4">
@@ -363,7 +417,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -380,7 +434,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -398,7 +452,8 @@
                 <!-- Первый dropdown -->
                 <div class="col-md-3 mb-2">
                     <div class="dropdown">
-                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownHome" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownHome"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Дом
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownHome">
@@ -408,11 +463,12 @@
                         </ul>
                     </div>
                 </div>
-            
+
                 <!-- Второй dropdown -->
                 <div class="col-md-3 mb-2">
                     <div class="dropdown">
-                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownChairs" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button"
+                            id="dropdownChairs" data-bs-toggle="dropdown" aria-expanded="false">
                             Стулья
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownChairs">
@@ -422,11 +478,12 @@
                         </ul>
                     </div>
                 </div>
-            
+
                 <!-- Третий dropdown -->
                 <div class="col-md-3 mb-2">
                     <div class="dropdown">
-                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownBrands" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button"
+                            id="dropdownBrands" data-bs-toggle="dropdown" aria-expanded="false">
                             Все бренды
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownBrands">
@@ -436,13 +493,13 @@
                         </ul>
                     </div>
                 </div>
-            
+
                 <!-- Кнопка сброса -->
                 <div class="col-md-3 text-center">
                     <button class="btn btn-warning text-white px-4">Сбросить фильтры</button>
                 </div>
             </div>
-            
+
 
             <!-- Product Grid -->
             <div class="row slider g-4">
@@ -464,8 +521,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
 
                 <!-- Product 2 -->
                 <div class="col-md-4">
@@ -478,7 +535,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -495,7 +552,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -518,8 +575,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
 
                 <!-- Product 2 -->
                 <div class="col-md-4">
@@ -532,7 +589,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -549,7 +606,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -572,8 +629,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
 
                 <!-- Product 2 -->
                 <div class="col-md-4">
@@ -586,7 +643,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -603,7 +660,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -626,8 +683,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
+
 
                 <!-- Product 2 -->
                 <div class="col-md-4">
@@ -640,7 +697,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -657,7 +714,7 @@
                             <p class="text-muted fs-6 fw-light ms-3 mb-0">
                                 <i class="bi bi-star text-orange pe-2"></i>Бренд
                             </p>
-                             <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
+                            <p class="fs-4 fw-normal text-start mb-2 ps-5">$400,00</p>
                         </div>
                         <p class="fs-3 fw-normal text-start mt-1 mb-0">Монк</p>
                     </div>
@@ -668,39 +725,107 @@
 
 
     <!-- brands -->
-    <section>
+    <section class="d-none d-lg-block">
         <div class="container-fluid px-5 mx-4 pt-5 pb-5 mb-5">
             <h2>Бренды</h2>
-    
-            <!-- Слайдер справа -->
-            <div class="slider-brand-right pt-5 pb-5 mb-5">
-                <div><img src="images/main_page/brand1.png" class="img-fluid pb-4" alt="Brand 1"></div>
-                <div><img src="images/main_page/brand2.png" class="img-fluid pb-4" alt="Brand 2"></div>
-                <div><img src="images/main_page/brand3.png" class="img-fluid pb-4" alt="Brand 3"></div>
-                <div><img src="images/main_page/brand1.png" class="img-fluid pb-4" alt="Brand 1"></div>
-                <div><img src="images/main_page/brand2.png" class="img-fluid pb-4" alt="Brand 2"></div>
-                <div><img src="images/main_page/brand3.png" class="img-fluid pb-4" alt="Brand 3"></div>
+            <div class="slider-brand-right row pt-5 pb-5 mb-5">
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand1.png" class="img-fluid pb-4" alt="Brand 1">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand2.png" class="img-fluid pb-4" alt="Brand 2">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand3.png" class="img-fluid pb-4" alt="Brand 3">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand1.png" class="img-fluid pb-4" alt="Brand 1">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand2.png" class="img-fluid pb-4" alt="Brand 2">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand3.png" class="img-fluid pb-4" alt="Brand 3">
+                </div>
             </div>
-    
-            <!-- Слайдер слева -->
-            <div class="slider-brand-left pb-5 mb-5">
-                <div><img src="images/main_page/brand4.png" class="img-fluid pb-4" alt="Brand 4"></div>
-                <div><img src="images/main_page/brand5.png" class="img-fluid pb-4" alt="Brand 5"></div>
-                <div><img src="images/main_page/brand6.png" class="img-fluid pb-4" alt="Brand 6"></div>
-                <div><img src="images/main_page/brand4.png" class="img-fluid pb-4" alt="Brand 4"></div>
-                <div><img src="images/main_page/brand5.png" class="img-fluid pb-4" alt="Brand 5"></div>
-                <div><img src="images/main_page/brand6.png" class="img-fluid pb-4" alt="Brand 6"></div>
+            <div class="slider-brand-left row border-bottom-orange pb-5 mb-5">
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand4.png" class="img-fluid pb-4" alt="Brand 4">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand5.png" class="img-fluid pb-4" alt="Brand 5">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand6.png" class="img-fluid pb-4" alt="Brand 6">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand4.png" class="img-fluid pb-4" alt="Brand 4">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand5.png" class="img-fluid pb-4" alt="Brand 5">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand6.png" class="img-fluid pb-4" alt="Brand 6">
+                </div>
             </div>
-    
             <div class="d-flex justify-content-center">
                 <button type="button" class="btn btn-warning text-white px-5 py-2 rounded-4">Подробнее</button>
             </div>
-        </div>
     </section>
-    
+
+
+    <!-- brands => mob version -->
+    <section class="d-md-none">
+        <div class="container-fluid px-5 mx-4 pt-5 pb-5 mb-5">
+            <h2>Бренды</h2>
+            <div class="row pt-5 pb-5 mb-5">
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand1.png" class="img-fluid pb-4" alt="Brand 1">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand2.png" class="img-fluid pb-4" alt="Brand 2">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand3.png" class="img-fluid pb-4" alt="Brand 3">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand1.png" class="img-fluid pb-4" alt="Brand 1">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand2.png" class="img-fluid pb-4" alt="Brand 2">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand3.png" class="img-fluid pb-4" alt="Brand 3">
+                </div>
+            </div>
+            <div class=" row border-bottom-orange pb-5 mb-5">
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand4.png" class="img-fluid pb-4" alt="Brand 4">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand5.png" class="img-fluid pb-4" alt="Brand 5">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand6.png" class="img-fluid pb-4" alt="Brand 6">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand4.png" class="img-fluid pb-4" alt="Brand 4">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand5.png" class="img-fluid pb-4" alt="Brand 5">
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/main_page/brand6.png" class="img-fluid pb-4" alt="Brand 6">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-warning text-white px-5 py-2 rounded-4">Подробнее</button>
+            </div>
+    </section>
+
 
     <!-- corner of sales -->
-    <section class="bg-green h-100">
+    <section class="bg-green h-100 d-none d-md-block">
         <div class="container-fluid">
             <div class="text-white text-center p-5" style="height: 400px;" data-aos="fade-down" data-aos-easing="linear"
                 data-aos-duration="1500">
@@ -712,6 +837,21 @@
             </div>
         </div>
     </section>
+
+       <!-- corner of sales mob version-->
+    <section class="bg-green h-100 d-md-none">
+        <div class="container-fluid">
+            <div class="text-white text-center p-5" style="height: 500px;" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">
+                <h2 class="fs-4 pb-3 pt-5">Уголок распродаж</h2>
+                <p class="fs-3">Узнайте обо всех наших специальных предложениях <br> в течение всего года в уголке
+                    распродаж.</p>
+                <button type="button" class="btn btn-warning text-white mt-5 px-5 py-3 rounded-4 mb-5">Посмотреть все
+                    предложения</button>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -740,8 +880,9 @@
     </section>
 
 
+
     <!-- furniture office/home -->
-    <section class="py-5">
+    <section class="py-5 d-none d-md-block">
         <div class="container-fluid px-5 mx-5">
             <div class="row text-start">
                 <div class="col-lg-6">
@@ -830,7 +971,7 @@
                         <div class="col-auto">
                             <button class="btn btn-light">Мебель для ванны</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Аксессуары для ванны</button>
                         </div>
                     </div>
@@ -838,6 +979,107 @@
             </div>
         </div>
     </section>
+
+    <!-- furniture office/home -->
+    <section class="py-5 d-md-none">
+        <div class="container-fluid">
+            <div class="row text-start">
+                <div class="col-lg-6">
+                    <h2 class="mb-4 text-start fs-3 fw-normal ps-5">Офис</h2>
+                    <div class="row slider g-2 px-5">
+                        <div class="col">
+                            <button class="btn btn-light">Рабочий стол</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Менеджмент</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Офисные стулья</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Хранение</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Коворкинг</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Конференц залы</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Зона ожидания</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Коллектив</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Образование</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Мебель для улицы</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Акустика</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Аксессуары</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Освещение</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4 text-start fs-3 fw-normal">Дом</h2>
+                    <div class="row slider px-2">
+                        <div class="col">
+                            <button class="btn btn-light">Стулья</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Кресла</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Диваны</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Столы</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Хранение</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Лампы</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Домашний офис</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Аксессуары и декор</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Плитка</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Сантехника</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Паркет</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Радиаторы</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Мебель для ванны</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-light">Аксессуары для ванны</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
     <!-- premium concept => main page -->
@@ -849,8 +1091,8 @@
         </div>
     </section>
 
-    <!-- footer -->
-    <footer class="bg-green text-white py-5">
+    <!-- footer  dV-->
+    <footer class="bg-green text-white py-5 d-none d-md-block">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-lg-3">
@@ -882,6 +1124,41 @@
                     </div>
                 </div>
                 <div class="col-4 border-footer"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer mV -->
+    <footer class="bg-green text-white py-5 d-md-none">
+        <div class="container">
+            <div class="flex-column align-items-center text-center mb-4">
+                <div class="col">
+                    <img src="/images/main_page/header_icon.png" class="img-fluid" alt="Premium Concept">
+                </div>
+
+                <div class="col">
+                    <div class="mt-4">
+                        <ul class="list-unstyled gap-4 gy-5 gx-4 mb-0">
+                            <li><a href="#" class="text-white text-decoration-none fs-5">ГЛАВНАЯ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">О НАС</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">ПОРТФОЛИО</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">КАТЕГОРИИ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">СОБЫТИЯ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">СТАТЬИ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-3 px-3"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-3  px-3"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-telegram fs-3  px-3"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

@@ -216,6 +216,54 @@ p {
   top:85%;
 }
 
+.bg_hero_img_mV{
+  background: url("../images/events/bg_hero_img_mV.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Специфичные размеры для разных типов изображений */
+.gallery-item.wide {
+  grid-column: span 2;
+}
+
+.gallery-item.tall {
+  grid-row: span 2;
+}
+
+.gallery-item.square {
+  aspect-ratio: 1/1;
+}
+
+.gallery-item.rectangle {
+  aspect-ratio: 4/3;
+}
+
 
 
 
@@ -268,7 +316,7 @@ p {
   .chair1, .chair2 {
     width: 100% !important;
     transform: none;
-    top: 0;
+    top: -72px;
     left: 0;
   }
 
@@ -279,6 +327,15 @@ p {
   .underline {
     text-decoration: none;
   }
+
+  .bg_hero_img_mV{
+    background: url("../images/events/bg_hero_img_mV.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+  }
+
 }
 
 /* Extra Small Mobile Styling */

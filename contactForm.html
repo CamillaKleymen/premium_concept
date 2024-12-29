@@ -36,17 +36,17 @@
 
 <body>
 
-    <!-- header -->
-    <header class="bg-black text-white">
+    <!-- header desktop -->
+    <header class="bg-black text-white d-none d-md-block">
         <div class="container-fluid">
             <div class="row align-items-center py-3">
-                <div class="col-auto">
+                <div class="col">
                     <p class="mb-0 me-3">premiumconcept@.com</p>
                 </div>
-                <div class="col-auto">
+                <div class="col">
                     <p class="mb-0">+998 90 900 90 09</p>
                 </div>
-                <div class="col-auto ms-auto">
+                <div class="col ms-auto">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Главная</a>
                         </li>
@@ -66,6 +66,7 @@
         </div>
         <nav class="navbar navbar-expand-lg py-5 p-5 bg-header">
             <div class="container-fluid">
+                <!-- Logo and Description -->
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand me-3 border-right p-3 pe-3" href="#">
                         <img src="images/main_page/header_icon.png" alt="Premium Concept" class="img-fluid"
@@ -101,6 +102,58 @@
                     </ul>
                 </div>
 
+                <!-- Language Switcher -->
+                <div class="ms-3 d-flex align-items-center">
+                    <a href="#" class="text-orange text-decoration-none fw-bold me-1">RU</a>
+                    <span class="text-white mx-1">|</span>
+                    <a href="#" class="text-white text-decoration-none fw-bold ms-1">UZ</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- header mob  -->
+    <header class="bg-black text-white d-md-none">
+        <nav class="navbar navbar-expand-lg py-5 p-5 bg-header">
+            <div class="container-fluid">
+                <!-- Logo and Description -->
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand me-3 border-right p-3 pe-3" href="#">
+                        <img src="images/main_page/header_icon.png" alt="Premium Concept" class="img-fluid"
+                            style="max-height: 60px;">
+                    </a>
+                    <span class="text-white fs-6 ps-3">№1 в сегменте премиум<br>в Узбекистане</span>
+                </div>
+
+                <!-- Responsive Toggle -->
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav w-50 justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold px-5" href="#">
+                                <i class="bi bi-mortarboard fs-5 me-1"></i> Office
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold px-5" href="#">
+                                <i class="bi bi-house fs-5 me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold px-5" href="#">
+                                <i class="bi bi-mic-fill fs-5 me-1"></i> Education
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Language Switcher -->
                 <div class="ms-3 d-flex align-items-center">
                     <a href="#" class="text-orange text-decoration-none fw-bold me-1">RU</a>
                     <span class="text-white mx-1">|</span>
@@ -112,11 +165,12 @@
     </header>
 
 
+
     <!-- main section -->
     <section>
         <div class="container-fluid">
 
-            <div class="row align-items-center mx-5 px-5 mt-5 pb-5 mb-5">
+            <div class="row align-items-center mt-5 pb-5 mb-5">
 
                 <div class="d-flex justify-content-start ps-0 pb-5">
                     <button class="btn btn-warning text-white px-5 py-2 rounded-4">
@@ -124,8 +178,16 @@
                     </button>
                 </div>
 
-                <div class="col-md-6">
-                    <h2 class="fs-3 fw-normal">Запросить цену</h2>
+
+                <div class="col">
+                    <div class="image-slider mb-5">
+                        <div><img src="images/categories/chairs1v2.png" class="img-fluid" alt="Example 1"></div>
+                        <div><img src="images/categories/chairs1v2.png" class="img-fluid" alt="Example 2"></div>
+                        <div><img src="images/categories/chairs1v2.png" class="img-fluid" alt="Example 3"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2 class="fs-3 fw-normal mt-5">Запросить цену</h2>
                     <p class="fs-3 fw-normal">Стул Монк из дерева</p>
                     <ul class="list-unstyled">
                         <li class="text-muted fs-4 fw-light mb-0"><i class="bi bi-tags text-orange fs-3"></i> Стулья
@@ -139,21 +201,15 @@
                     <button class="btn btn-warning text-white px-5 py-2 mt-3">Описание</button>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="image-slider">
-                        <div><img src="images/categories/chairs1v2.png" class="img-fluid" alt="Example 1"></div>
-                        <div><img src="images/categories/chairs1v2.png" class="img-fluid" alt="Example 2"></div>
-                        <div><img src="images/categories/chairs1v2.png" class="img-fluid" alt="Example 3"></div>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </section>
 
 
 
-    <!-- feedback  -->
-    <section>
+    <!-- feedback  dV-->
+    <section class="d-none d-md-block">
         <div class="container-fluid">
             <div class="row px-5 border-bottom-orange pb-5 mb-5">
                 <div class="col-md-6">
@@ -193,7 +249,47 @@
         </div>
     </section>
 
-
+    <!-- feedback  mV-->
+    <section class="d-md-none">
+        <div class="container-fluid">
+            <div class="flex-column border-bottom-orange pb-5 mb-5">
+                <div class="col">
+                    <div class="p-2">
+                        <h2 class="fw-bold">Хотите оформить заказ?</h2>
+                        <p class="text-muted fs-2 pt-5 fw-semibold">Заполните форму обратной связи</p>
+                        <p class="text-black">После отправки формы наши специалисты свяжутся с вами в ближайшее время
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <h3 class="form-title text-center">Обратная связь</h3>
+                        <form>
+                            <div class="mb-3 border-bottom border-black">
+                                <input type="email" class="form-control border-0 border-bottom" placeholder="Введите e-mail" required>
+                            </div>
+                            <div class="mb-3 border-bottom border-black">
+                                <input type="text" class="form-control border-0 border-bottom" placeholder="Введите имя" required>
+                            </div>
+                            <div class="mb-3 border-bottom border-black">
+                                <input type="tel" class="form-control border-0 border-bottom" placeholder="Введите номер телефона" required>
+                            </div>
+                            <div class="mb-3 border-bottom border-black">
+                                <textarea class="form-control border-0 border-bottom" rows="3" placeholder="Введите сообщение" required></textarea>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input text-black" id="personalDataConsent" required>
+                                <label class="form-check-label" for="personalDataConsent">Даю согласие на обработку
+                                    персональных данных</label>
+                            </div>
+                            <button type="submit" class="btn btn-warning text-white px-5 py-2 mt-3">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
 
 
@@ -287,7 +383,7 @@
                         <div class="col-auto">
                             <button class="btn btn-light">Мебель для ванны</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Аксессуары для ванны</button>
                         </div>
                     </div>
@@ -296,98 +392,97 @@
         </div>
     </section>
 
-
     <!-- furniture office/home -->
     <section class="py-5 d-md-none">
-        <div class="container-fluid px-5 mx-5">
+        <div class="container-fluid">
             <div class="row text-start">
                 <div class="col-lg-6">
                     <h2 class="mb-4 text-start fs-3 fw-normal ps-5">Офис</h2>
                     <div class="row slider g-2 px-5">
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Рабочий стол</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Менеджмент</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Офисные стулья</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Хранение</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Коворкинг</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Конференц залы</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Зона ожидания</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Коллектив</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Образование</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Мебель для улицы</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Акустика</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Аксессуары</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Освещение</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="mb-4 text-start fs-3 fw-normal ps-5">Дом</h2>
-                    <div class="row slider g-2 px-5">
-                        <div class="col-auto">
+                    <h2 class="mb-4 text-start fs-3 fw-normal">Дом</h2>
+                    <div class="row slider px-2">
+                        <div class="col">
                             <button class="btn btn-light">Стулья</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Кресла</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Диваны</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Столы</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Хранение</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Лампы</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Домашний офис</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Аксессуары и декор</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Плитка</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Сантехника</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Паркет</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Радиаторы</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Мебель для ванны</button>
                         </div>
-                        <div class="col-auto">
+                        <div class="col">
                             <button class="btn btn-light">Аксессуары для ванны</button>
                         </div>
                     </div>
@@ -395,6 +490,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- premium concept => main page -->
     <section class="bg-black p-3">
@@ -405,8 +501,8 @@
         </div>
     </section>
 
-    <!-- footer -->
-    <footer class="bg-green text-white py-5">
+     <!-- footer  dV-->
+     <footer class="bg-green text-white py-5 d-none d-md-block">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-lg-3">
@@ -441,6 +537,42 @@
             </div>
         </div>
     </footer>
+
+    <!-- footer mV -->
+    <footer class="bg-green text-white py-5 d-md-none">
+        <div class="container">
+            <div class="flex-column align-items-center text-center mb-4">
+                <div class="col">
+                    <img src="/images/main_page/header_icon.png" class="img-fluid" alt="Premium Concept">
+                </div>
+
+                <div class="col">
+                    <div class="mt-4">
+                        <ul class="list-unstyled gap-4 gy-5 gx-4 mb-0">
+                            <li><a href="#" class="text-white text-decoration-none fs-5">ГЛАВНАЯ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">О НАС</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">ПОРТФОЛИО</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">КАТЕГОРИИ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">СОБЫТИЯ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">СТАТЬИ</a></li>
+                            <li><a href="#" class="text-white text-decoration-none fs-5">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-3 px-3"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-3  px-3"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-telegram fs-3  px-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
 
